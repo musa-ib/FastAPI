@@ -21,3 +21,8 @@ async def get_model(model_name: ModelName):
         return {"model_name": model_name, "message": "LeCNN all the images"}
 
     return {"model_name": model_name, "message": "Have some residuals"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("Mod:app",reload=True)
